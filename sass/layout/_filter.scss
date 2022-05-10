@@ -1,0 +1,33 @@
+.filter {
+	&__container {
+		&:not(:first-child) {
+			margin-top: 2rem; // space between filter containers
+		}
+
+		&__title {
+			font-size: $font-size-title;
+			color: $color-text-dark;
+			font-weight: $font-weight-title;
+		}
+
+		&__list {
+			margin-top: 1rem; // space between title and filter element list
+
+			&__element {
+				margin-top: 1rem; // space between filter list elements
+			}
+		}
+	}
+}
+
+.white {
+	background-color: #fff;
+}
+
+.black {
+	background-color: #000000;
+}
+
+.red {
+	background-color: #ff0000;
+}

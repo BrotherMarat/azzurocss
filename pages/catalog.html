@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="../css/style.css" />
+		<!--<link rel="shortcut icon" type="image/png" href="img/favicon.png" />-->
+
+		<title>Интернет-магазин сантехники azzuro.ru</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<a href="/" class="header__logo-link">
+					<img src="/img/azzuro2.svg" alt="logo" class="header__logo" />
+				</a>
+				<div class="btn menu">
+					<button class="menu__btn"></button>
+					<span class="menu__text-visible">Каталог</span>
+					<span class="menu__text-invisible">Закрыть</span>
+				</div>
+				<form action="#" class="search">
+					<input type="text" class="search__input" placeholder="Поиск" />
+					<button class="search__button">
+						<img
+							src="../img/svg/search.svg"
+							alt="search icon"
+							class="search__icon"
+						/>
+					</button>
+				</form>
+				<div class="info">
+					<div class="question">
+						<a href="#" class="question__link">
+							<img
+								src="../img/svg/question-circle.svg"
+								alt="question"
+								class="question__icon"
+							/>
+						</a>
+					</div>
+					<div class="accaunt">
+						<a href="#" class="question__link">
+							<img
+								src="../img/svg/accaunt.svg"
+								alt="accaunt"
+								class="accaunt__icon"
+							/>
+						</a>
+					</div>
+					<div class="cart">
+						<a href="#" class="question__link">
+							<img
+								src="../img/svg/shopping-cart.svg"
+								alt="shopping cart icon"
+								class="cart__icon"
+							/>
+						</a>
+					</div>
+				</div>
+				<div class="breadcrumbs">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__list__element">
+							<a href="#" class="-link">Главная</a>
+						</li>
+						<li class="breadcrumbs__list__element">
+							<a href="#" class="-link">Каталог</a>
+						</li>
+						<li class="breadcrumbs__list__element">
+							<a href="#" class="-link">Ванны</a>
+						</li>
+						<li class="breadcrumbs__list__element">
+							<a href="#" class="-link">Стальные ванны</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<div class="catalog">
+				<h1 class="catalog__name big-title">Стальные ванны</h1>
+				<div class="catalog__left">
+					<div class="filter">
+						<div class="filter__container">
+							<span class="filter__container__title">Бренды</span>
+							<div class="filter__container__list">
+								<div class="filter__container__list__element">
+									<label class="filter__checkbox">
+										<input type="checkbox" class="filter__checkbox__input" />
+										<span class="filter__checkbox__square"></span>
+										<span class="filter__checkbox__name">Grohe</span>
+									</label>
+								</div>
+								<div class="filter__container__list__element">
+									<label class="filter__checkbox">
+										<input type="checkbox" class="filter__checkbox__input" />
+										<span class="filter__checkbox__square"></span>
+										<span class="filter__checkbox__name">Hansgrohe</span>
+									</label>
+								</div>
+								<div class="filter__container__list__element">
+									<label class="filter__checkbox">
+										<input type="checkbox" class="filter__checkbox__input" />
+										<span class="filter__checkbox__square"></span>
+										<span class="filter__checkbox__name">Villeroy&Boch</span>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="filter__container">
+							<span class="filter__container__title">Форма</span>
+							<div class="filter__container__list">
+								<div class="filter__container__list__element">
+									<label class="filter__checkbox">
+										<input type="checkbox" class="filter__checkbox__input" />
+										<span class="filter__checkbox__square"></span>
+										<span class="filter__checkbox__name">Прямоугольная</span>
+									</label>
+								</div>
+								<div class="filter__container__list__element">
+									<label class="filter__checkbox">
+										<input type="checkbox" class="filter__checkbox__input" />
+										<span class="filter__checkbox__square"></span>
+										<span class="filter__checkbox__name">Круглая</span>
+									</label>
+								</div>
+								<div class="filter__container__list__element">
+									<label class="filter__checkbox">
+										<input type="checkbox" class="filter__checkbox__input" />
+										<span class="filter__checkbox__square"></span>
+										<span class="filter__checkbox__name">Овальная</span>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="filter__container">
+							<span class="filter__container__title">Цвет</span>
+							<div class="filter__container__list">
+								<div class="filter__container__list__element">
+									<label class="filter__checkbox">
+										<input type="checkbox" class="filter__checkbox__input" />
+										<span class="filter__checkbox__square"></span>
+										<span class="filter__checkbox__color white"></span>
+										<span class="filter__checkbox__name">Белый</span>
+									</label>
+								</div>
+								<div class="filter__container__list__element">
+									<label class="filter__checkbox">
+										<input type="checkbox" class="filter__checkbox__input" />
+										<span class="filter__checkbox__square"></span>
+										<span class="filter__checkbox__color black"></span>
+										<span class="filter__checkbox__name">Чёрный</span>
+									</label>
+								</div>
+								<div class="filter__container__list__element">
+									<label class="filter__checkbox">
+										<input type="checkbox" class="filter__checkbox__input" />
+										<span class="filter__checkbox__square"></span>
+										<span class="filter__checkbox__color red"></span>
+										<span class="filter__checkbox__name">Красный</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__container">
+					<div class="catalog__container__sort">
+						<span class="catalog__container__sort__name text-default-light"
+							>Сортировать, сначала:</span
+						>
+						<span class="catalog__container__sort__price-popular text-default"
+							>самые продаваемые</span
+						>
+						<span class="catalog__container__sort__price-increase text-default"
+							>дешёвые</span
+						>
+						<span class="catalog__container__sort__price-decrease text-default"
+							>дорогие</span
+						>
+					</div>
+					<div class="catalog__container__goods">
+						<div class="catalog__container__goods__card">
+							<div class="catalog__container__goods__card__picture__container">
+								<a
+									href="#"
+									class="catalog__container__goods__card__picture__container__link"
+								>
+									<img
+										src="/img/test-catalog-1.webp"
+										alt="Ванна рока"
+										class="catalog__container__goods__card__picture__container__link-img"
+								/></a>
+							</div>
+							<div class="catalog__container__goods__card__price__container">
+								<span
+									class="catalog__container__goods__card__price__container-current"
+								>
+									106799
+								</span>
+								<span
+									class="catalog__container__goods__card__price__container-symbol"
+									>&#8381;</span
+								>
+								<span
+									class="catalog__container__goods__card__price__container-set"
+								>
+									&mdash; комплект 3 товара</span
+								>
+							</div>
+							<a href="#" class="catalog__container__goods__card__name">
+								Унитаз подвесной Vitra Sento 7748B003-5409 с сиденьем микролифт
+							</a>
+							<div class="catalog__container__goods__card__props">
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Вариантов исполнения:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										5
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Размер:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										170*70*40
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Страна:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										Италия
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog__container__goods__card">
+							<div class="catalog__container__goods__card__picture__container">
+								<a
+									href="#"
+									class="catalog__container__goods__card__picture__container__link"
+								>
+									<img
+										src="/img/test-catalog-2.webp"
+										alt="Ванна рока"
+										class="catalog__container__goods__card__picture__container__link-img"
+								/></a>
+							</div>
+							<div class="catalog__container__goods__card__price__container">
+								<span
+									class="catalog__container__goods__card__price__container-current"
+								>
+									106799
+								</span>
+								<span
+									class="catalog__container__goods__card__price__container-symbol"
+									>&#8381;</span
+								>
+								<span
+									class="catalog__container__goods__card__price__container-set"
+								>
+									&mdash; комплект 3 товара</span
+								>
+							</div>
+							<a href="#" class="catalog__container__goods__card__name">
+								Унитаз подвесной Vitra Sento 7748B003-5409 с сиденьем микролифт
+							</a>
+							<div class="catalog__container__goods__card__props">
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Вариантов исполнения:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										5
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Размер:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										170*70*40
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Страна:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										Италия
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog__container__goods__card">
+							<div class="catalog__container__goods__card__picture__container">
+								<a
+									href="#"
+									class="catalog__container__goods__card__picture__container__link"
+								>
+									<img
+										src="/img/test-catalog-3.webp"
+										alt="Ванна рока"
+										class="catalog__container__goods__card__picture__container__link-img"
+								/></a>
+							</div>
+							<div class="catalog__container__goods__card__price__container">
+								<span
+									class="catalog__container__goods__card__price__container-current"
+								>
+									106799
+								</span>
+								<span
+									class="catalog__container__goods__card__price__container-symbol"
+									>&#8381;</span
+								>
+								<span
+									class="catalog__container__goods__card__price__container-set"
+								>
+									&mdash; комплект 3 товара</span
+								>
+							</div>
+							<a href="#" class="catalog__container__goods__card__name">
+								Унитаз подвесной Vitra Sento 7748B003-5409 с сиденьем микролифт
+							</a>
+							<div class="catalog__container__goods__card__props">
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Вариантов исполнения:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										5
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Размер:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										170*70*40
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Страна:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										Италия
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog__container__goods__card">
+							<div class="catalog__container__goods__card__picture__container">
+								<a
+									href="#"
+									class="catalog__container__goods__card__picture__container__link"
+								>
+									<img
+										src="/img/Rectangle21.jpg"
+										alt="Ванна рока"
+										class="catalog__container__goods__card__picture__container__link-img"
+								/></a>
+							</div>
+							<div class="catalog__container__goods__card__price__container">
+								<span
+									class="catalog__container__goods__card__price__container-current"
+								>
+									106799
+								</span>
+								<span
+									class="catalog__container__goods__card__price__container-symbol"
+									>&#8381;</span
+								>
+								<span
+									class="catalog__container__goods__card__price__container-set"
+								>
+									&mdash; комплект 3 товара</span
+								>
+							</div>
+							<a href="#" class="catalog__container__goods__card__name">
+								Унитаз подвесной Vitra Sento 7748B003-5409 с сиденьем микролифт
+							</a>
+							<div class="catalog__container__goods__card__props">
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Вариантов исполнения:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										5
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Размер:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										170*70*40
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Страна:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										Италия
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog__container__goods__card">
+							<div class="catalog__container__goods__card__picture__container">
+								<a
+									href="#"
+									class="catalog__container__goods__card__picture__container__link"
+								>
+									<img
+										src="/img/Rectangle22.jpg"
+										alt="Ванна рока"
+										class="catalog__container__goods__card__picture__container__link-img"
+								/></a>
+							</div>
+							<div class="catalog__container__goods__card__price__container">
+								<span
+									class="catalog__container__goods__card__price__container-current"
+								>
+									106799
+								</span>
+								<span
+									class="catalog__container__goods__card__price__container-symbol"
+									>&#8381;</span
+								>
+								<span
+									class="catalog__container__goods__card__price__container-set"
+								>
+									&mdash; комплект 3 товара</span
+								>
+							</div>
+							<a href="#" class="catalog__container__goods__card__name">
+								Унитаз подвесной Vitra Sento 7748B003-5409 с сиденьем микролифт
+							</a>
+							<div class="catalog__container__goods__card__props">
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Вариантов исполнения:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										5
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Размер:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										170*70*40
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Страна:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										Италия
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog__container__goods__card">
+							<div class="catalog__container__goods__card__picture__container">
+								<a
+									href="#"
+									class="catalog__container__goods__card__picture__container__link"
+								>
+									<img
+										src="/img/Rectangle23.jpg"
+										alt="Ванна рока"
+										class="catalog__container__goods__card__picture__container__link-img"
+								/></a>
+							</div>
+							<div class="catalog__container__goods__card__price__container">
+								<span
+									class="catalog__container__goods__card__price__container-current"
+								>
+									106799
+								</span>
+								<span
+									class="catalog__container__goods__card__price__container-symbol"
+									>&#8381;</span
+								>
+								<span
+									class="catalog__container__goods__card__price__container-set"
+								>
+									&mdash; комплект 3 товара</span
+								>
+							</div>
+							<a href="#" class="catalog__container__goods__card__name">
+								Унитаз подвесной Vitra Sento 7748B003-5409 с сиденьем микролифт
+							</a>
+							<div class="catalog__container__goods__card__props">
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Вариантов исполнения:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										5
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Размер:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										170*70*40
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Страна:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										Италия
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog__container__goods__card">
+							<div class="catalog__container__goods__card__picture__container">
+								<a
+									href="#"
+									class="catalog__container__goods__card__picture__container__link"
+								>
+									<img
+										src="/img/Rectangle24.jpg"
+										alt="Ванна рока"
+										class="catalog__container__goods__card__picture__container__link-img"
+								/></a>
+							</div>
+							<div class="catalog__container__goods__card__price__container">
+								<span
+									class="catalog__container__goods__card__price__container-current"
+								>
+									106799
+								</span>
+								<span
+									class="catalog__container__goods__card__price__container-symbol"
+									>&#8381;</span
+								>
+								<span
+									class="catalog__container__goods__card__price__container-set"
+								>
+									&mdash; комплект 3 товара</span
+								>
+							</div>
+							<a href="#" class="catalog__container__goods__card__name">
+								Унитаз подвесной Vitra Sento 7748B003-5409 с сиденьем микролифт
+							</a>
+							<div class="catalog__container__goods__card__props">
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Вариантов исполнения:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										5
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Размер:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										170*70*40
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Страна:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										Италия
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog__container__goods__card">
+							<div class="catalog__container__goods__card__picture__container">
+								<a
+									href="#"
+									class="catalog__container__goods__card__picture__container__link"
+								>
+									<img
+										src="/img/Rectangle25.jpg"
+										alt="Ванна рока"
+										class="catalog__container__goods__card__picture__container__link-img"
+								/></a>
+							</div>
+							<div class="catalog__container__goods__card__price__container">
+								<span
+									class="catalog__container__goods__card__price__container-current"
+								>
+									106799
+								</span>
+								<span
+									class="catalog__container__goods__card__price__container-symbol"
+									>&#8381;</span
+								>
+								<span
+									class="catalog__container__goods__card__price__container-set"
+								>
+									&mdash; комплект 3 товара</span
+								>
+							</div>
+							<a href="#" class="catalog__container__goods__card__name">
+								Унитаз подвесной Vitra Sento 7748B003-5409 с сиденьем микролифт
+							</a>
+							<div class="catalog__container__goods__card__props">
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Вариантов исполнения:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										5
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Размер:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										170*70*40
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Страна:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										Италия
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog__container__goods__card">
+							<div class="catalog__container__goods__card__picture__container">
+								<a
+									href="#"
+									class="catalog__container__goods__card__picture__container__link"
+								>
+									<img
+										src="/img/Rectangle26.jpg"
+										alt="Ванна рока"
+										class="catalog__container__goods__card__picture__container__link-img"
+								/></a>
+							</div>
+							<div class="catalog__container__goods__card__price__container">
+								<span
+									class="catalog__container__goods__card__price__container-current"
+								>
+									106799
+								</span>
+								<span
+									class="catalog__container__goods__card__price__container-symbol"
+									>&#8381;</span
+								>
+								<span
+									class="catalog__container__goods__card__price__container-set"
+								>
+									&mdash; комплект 3 товара</span
+								>
+							</div>
+							<a href="#" class="catalog__container__goods__card__name">
+								Унитаз подвесной Vitra Sento 7748B003-5409 с сиденьем микролифт
+							</a>
+							<div class="catalog__container__goods__card__props">
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Вариантов исполнения:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										5
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Размер:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										170*70*40
+									</span>
+								</div>
+
+								<div class="catalog__container__goods__card__props__line">
+									<span
+										class="catalog__container__goods__card__props__line--name text-default-light"
+									>
+										Страна:
+									</span>
+									<span
+										class="catalog__container__goods__card__props__line--value text-default"
+									>
+										Италия
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="pages__container">
+							<div class="pages__container__btn">
+								<span class="pages__container__btn--text">Показать ещё</span>
+							</div>
+							<div class="pages__container__numbers">1 2 3 4 5 6</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer -link">
+				<div class="footer__left">
+					<ul class="footer__left-list">
+						<li>
+							<a href="#" class="-link">Доставка</a>
+						</li>
+						<li>
+							<a href="#" class="-link">Оплата</a>
+						</li>
+						<li>
+							<a href="#" class="-link">Гарантия</a>
+						</li>
+						<li>
+							<a href="#" class="-link">Возврат</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__right">
+					<ul class="footer__right-list">
+						<li>
+							<a href="#" class="-link">О компании</a>
+						</li>
+						<li>
+							<a href="#" class="-link">Контакты</a>
+						</li>
+						<li>+7(495)123-45-67</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

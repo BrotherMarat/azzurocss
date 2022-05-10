@@ -1,0 +1,33 @@
+.baner {
+	grid-column: 1 / -1;
+	margin: 2.5rem 0;
+
+	&-test {
+		width: 100%;
+	}
+}
+
+.stocks {
+	grid-column: 1 / span 8;
+
+	margin: 2.4rem 1rem;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
+
+	grid-gap: 1rem;
+}
+
+.btn__stock__all {
+	align-self: center;
+}
+
+.brands {
+	grid-column: 1 / span 8;
+
+	margin: 2.4rem 1rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10.6rem, 1fr));
+
+	grid-gap: 1.8rem;
+}

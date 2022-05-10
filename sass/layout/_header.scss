@@ -1,0 +1,117 @@
+.header {
+	grid-column: 1 / -1;
+	display: grid;
+
+	grid-template-columns: 19rem 10.9rem minmax(10rem, auto) min-content;
+
+	grid-column-gap: 1.4rem;
+
+	height: 3.95rem;
+	margin: 4.7rem 1rem 2.5rem 0.5rem;
+
+	&__logo-link {
+		align-self: center;
+	}
+
+	.search {
+		display: flex;
+		border: 2px solid #fa7b05;
+		box-sizing: border-box;
+		filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.15));
+		border-radius: 5px;
+		margin-right: 0.8rem;
+		margin-left: -0.4rem;
+
+		align-items: center;
+
+		&__input {
+			font-family: inherit;
+			font-size: 2rem;
+			color: inherit;
+			border: none;
+			width: 100%;
+			padding: 0.6rem 3.2rem 0.6rem 1.2rem;
+			border-radius: 5px;
+			margin-right: -3rem;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		&__button {
+			display: flex;
+			align-items: center;
+			border: none;
+			background-color: inherit;
+		}
+
+		&__icon {
+			height: 2.3rem;
+			width: 2.3rem;
+			background-color: inherit;
+			stroke: transparent;
+			stroke-width: 0px;
+			cursor: pointer;
+		}
+	}
+
+	.info {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1rem;
+	}
+
+	.question {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&__link {
+			color: red;
+		}
+
+		&__icon {
+			width: 3.4rem;
+			height: 3.4rem;
+			fill: rgb(98, 255, 78);
+
+			&:hover {
+				filter: invert(68%) sepia(74%) saturate(417%) hue-rotate(77deg)
+					brightness(91%) contrast(84%);
+			}
+		}
+	}
+
+	.accaunt {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&__icon {
+			width: 3.4rem;
+			height: 3.4rem;
+
+			&:hover {
+				filter: invert(68%) sepia(74%) saturate(417%) hue-rotate(77deg)
+					brightness(91%) contrast(84%);
+			}
+		}
+	}
+
+	.cart {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&__icon {
+			width: 3.4rem;
+			height: 3.4rem;
+
+			&:hover {
+				filter: invert(68%) sepia(74%) saturate(417%) hue-rotate(77deg)
+					brightness(91%) contrast(84%);
+			}
+		}
+	}
+}

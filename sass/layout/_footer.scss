@@ -1,0 +1,36 @@
+.footer {
+	grid-column: 1 / -1;
+	border-top: 1px solid rgba(196, 196, 196, 1);
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	margin: 2.6rem 2rem 4rem 2rem;
+	padding-top: 4rem;
+
+	font-size: $font-size-title;
+	font-weight: $font-weight-text-400;
+
+	column-gap: 5rem;
+
+	&__left {
+		&-list {
+			list-style: none;
+
+			display: grid;
+			grid-template-columns: repeat(4, min-content);
+			column-gap: 2rem;
+		}
+	}
+
+	&__right {
+		justify-self: end;
+		&-list {
+			list-style: none;
+
+			display: grid;
+			grid-template-columns: 9.1rem 7.4rem 12.8rem;
+			column-gap: 2rem;
+		}
+	}
+}

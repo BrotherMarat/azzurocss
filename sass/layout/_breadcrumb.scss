@@ -1,0 +1,22 @@
+.breadcrumbs {
+	grid-column: 2 / span 2;
+
+	&__list {
+		margin: 1.5rem 0;
+		display: flex;
+
+		list-style: none;
+
+		font-size: $font-size-small;
+
+		white-space: nowrap;
+
+		&__element {
+			&:not(:first-child):before {
+				content: "-";
+
+				margin: 0 1rem;
+			}
+		}
+	}
+}
