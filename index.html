@@ -19,15 +19,76 @@
 	</head>
 	<body>
 		<div class="container">
+			<div class="topMenu" id="popupMenu">
+				<div class="topMenu__popup">
+					<a href="#" class="topMenu__popup__button btn close"></a>
+					<div class="topMenu__popup__title">
+						<div class="topMenu__popup__title-symbol">
+							<div class="topMenu__popup__title-symbol-1"></div>
+							<div class="topMenu__popup__title-symbol-2"></div>
+							<div class="topMenu__popup__title-symbol-3"></div>
+							<div class="topMenu__popup__title-symbol-4"></div>
+						</div>
+						<span class="topMenu__popup__title-name">Каталог товаров</span>
+					</div>
+
+					<div class="topMenu__popup__content text-catalog-menu">
+						<div class="topMenu__popup__content__section">
+							<div class="topMenu__popup__content__section-logo">
+								<img
+									class="topMenu__popup__content__section-logo-icon"
+									src="/img/svg/bath-icon.svg"
+									alt="логотип ванны"
+								/>
+							</div>
+							<span class="topMenu__popup__content__section-name">Ванны</span>
+						</div>
+						<div class="topMenu__popup__content__section">
+							<div class="topMenu__popup__content__section-logo">
+								<img
+									class="topMenu__popup__content__section-logo-icon"
+									src="/img/svg/bath-icon.svg"
+									alt="логотип ванны"
+								/>
+							</div>
+							<span class="topMenu__popup__content__section-name">Унитазы</span>
+						</div>
+						<div class="topMenu__popup__content__section">
+							<div class="topMenu__popup__content__section-logo">
+								<img
+									class="topMenu__popup__content__section-logo-icon"
+									src="/img/svg/bath-icon.svg"
+									alt="логотип ванны"
+								/>
+							</div>
+							<span class="topMenu__popup__content__section-name"
+								>Раковины</span
+							>
+						</div>
+						<div class="topMenu__popup__content__section">
+							<div class="topMenu__popup__content__section-logo">
+								<img
+									class="topMenu__popup__content__section-logo-icon"
+									src="/img/svg/bath-icon.svg"
+									alt="логотип ванны"
+								/>
+							</div>
+							<span class="topMenu__popup__content__section-name"
+								>Душевые кабины</span
+							>
+						</div>
+					</div>
+				</div>
+			</div>
 			<header class="header">
 				<a href="/" class="header__logo-link">
 					<img src="/img/azzuro2.svg" alt="logo" class="header__logo" />
 				</a>
-				<div class="btn menu">
+				<a href="#popupMenu" class="btn menu">
 					<button class="menu__btn"></button>
 					<span class="menu__text-visible">Каталог</span>
 					<span class="menu__text-invisible">Закрыть</span>
-				</div>
+				</a>
 				<form action="#" class="search">
 					<input type="text" class="search__input" placeholder="Поиск" />
 					<button class="search__button">

@@ -1,0 +1,138 @@
+.topMenu {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(black, 0.85);
+	z-index: 9999;
+
+	transition: all 0.3s;
+	visibility: hidden;
+	transform: translate(-110%);
+
+	&__popup {
+		height: 100vh;
+		width: 32.5rem;
+
+		top: 0;
+		left: 0;
+		background-color: $color-text-white;
+		z-index: 10;
+
+		display: flex;
+		flex-direction: column;
+
+		//transition: 0.6s ease-in-out;
+
+		//visibility: hidden;
+
+		&__button {
+			background-color: $color-white;
+			height: 6rem;
+			width: 6rem;
+			position: fixed;
+			top: 3.5rem;
+			left: 35rem;
+			border-radius: 50%;
+			z-index: 2000;
+			cursor: pointer;
+		}
+
+		&__title {
+			margin: 4.7rem 1rem 2.5rem 2rem;
+			flex-wrap: wrap;
+			display: flex;
+			align-items: center;
+
+			&-symbol {
+				height: 3.2rem;
+				width: 3.2rem;
+				position: relative;
+				margin-right: 1rem;
+
+				&-1 {
+					position: absolute;
+					width: 14.44px;
+					height: 14.44px;
+					left: 1px;
+					top: 1px;
+
+					border: 3px solid #fa7b05;
+					border-radius: 50%;
+				}
+				&-2 {
+					position: absolute;
+					width: 14.44px;
+					height: 14.44px;
+					left: 18.56px;
+					top: 1px;
+
+					border: 3px solid #e62a76;
+					border-radius: 50%;
+				}
+				&-3 {
+					position: absolute;
+					width: 14.44px;
+					height: 14.44px;
+					left: 1px;
+					top: 18.56px;
+
+					border: 3px solid #51af5b;
+					border-radius: 50%;
+				}
+				&-4 {
+					position: absolute;
+					width: 14.44px;
+					height: 14.44px;
+					left: 18.56px;
+					top: 18.56px;
+
+					border: 3px solid #774898;
+					border-radius: 50%;
+				}
+			}
+
+			&-name {
+				font-size: 3rem;
+				font-weight: $font-weight-title;
+				color: $color-text-dark;
+			}
+		}
+
+		&__content {
+			display: flex;
+			flex-direction: column;
+
+			margin-left: 2.5rem;
+
+			&__section {
+				display: flex;
+
+				&:not(:last-child) {
+					margin-bottom: 2rem;
+				}
+
+				&-logo {
+					width: 2.4rem;
+					height: 2.4rem;
+
+					margin-right: 1.5rem;
+				}
+			}
+		}
+
+		// change visibility
+		/* opacity: 0;
+	visibility: visible; 
+	transition: all 0.3s; */
+	}
+
+	&:target {
+		transition: all 0.3s;
+		visibility: visible;
+		transform: translate(0px);
+	}
+}
+
+// Turn off scroll by making "body {overlow: hidden;}" in react when button presed
