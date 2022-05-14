@@ -1,9 +1,24 @@
+// Title
 .big-title {
 	font-size: 3rem;
 	font-weight: $font-weight-title;
 	color: $color-text-dark;
 }
 
+.default-title {
+	font-size: $font-size-title;
+	font-weight: $font-weight-title;
+	color: $color-text-dark;
+}
+
+// buttons
+// Detail set card
+.set-select-button {
+	font-size: $default-font-size;
+	font-weight: $font-weight-title;
+}
+
+// text
 .text-default-light {
 	font-size: $default-font-size;
 	color: $color-text-light;
@@ -21,4 +36,10 @@
 	font-size: $font-size-title-big;
 	font-weight: $font-weight-text-400;
 	color: $color-text-dark;
+}
+
+// Symbol
+.symbol_rub-24-medium {
+	font-size: 2.4rem;
+	font-weight: $font-weight-title;
 }

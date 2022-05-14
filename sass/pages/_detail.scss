@@ -4,7 +4,7 @@
 
 	display: grid;
 	grid-template-columns: 1fr 24rem;
-	//grid-template-rows: repeat(7, min-content);
+	grid-template-rows: repeat(7, min-content);
 
 	&__name {
 		grid-column: 1 / -1;

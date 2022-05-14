@@ -1,7 +1,7 @@
 // COLOR VARIABLES
 $color-primary: #fa7b05;
 
-$color-secondary: #e62a76;
+$color-secondary: rgba(230, 42, 118, 1);
 
 $color-filter: #018786;
 
@@ -25,11 +25,23 @@ $font-size-title: 1.6rem;
 $font-size-title-big: 1.8rem;
 
 // Font weight
-$font-weight-title: 500;
-$font-weight-text-400: 400;
-$font-weight-text-300: 300;
+$font-weight-bold: 700; // Bold
+$font-weight-title: 500; // Medium
+$font-weight-text-400: 400; // Regular
+$font-weight-text-300: 300; // Light
 
 // Responsive Breakpoints
 $bp-large: 75em; // 1200px / 16
 $bp-medium: 56.25em; // 900px / 16
 $bp-small: 37.5em; // 600px / 16
+
+// Shadow
+.top-shadow {
+	// top shadow
+	box-shadow: 0 -5px 5px -5px $color-checkbox;
+}
+
+.bottom-shadow {
+	// bottom shadow
+	box-shadow: 0 5px 5px -5px $color-checkbox;
+}

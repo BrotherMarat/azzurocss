@@ -1,0 +1,78 @@
+// setying set
+
+.detail__set {
+	margin-top: 2.2rem;
+	padding-bottom: 2rem;
+	grid-column: 1 / -1;
+	//grid-row: 4 / span 1;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+	grid-row-gap: 2rem;
+
+	&__total {
+		grid-column: 1 / -1;
+		&-text {
+			margin: 1rem 0 0 1rem;
+		}
+	}
+
+	&__card {
+		margin: 0 1rem;
+
+		height: 10rem;
+
+		display: grid;
+		grid-template-columns: 10rem 1fr 9.3rem;
+		grid-template-rows: 1fr 5.6rem;
+
+		&-img {
+			align-self: center;
+			grid-column: 1 / span 1;
+			grid-row: 1 / -1;
+			width: 100%;
+			padding: 0.5rem;
+		}
+
+		&__price {
+			grid-column: 2 / span 2;
+			grid-row: 1 / span 1;
+			justify-self: end;
+
+			&__current {
+				&-value {
+				}
+			}
+		}
+
+		&-text {
+			grid-column: 2 / span 1;
+			grid-row: 2 / span 1;
+		}
+
+		&__control {
+			grid-column: 3 / span 1;
+			grid-row: 2 / span 1;
+		}
+	}
+}
+
+.set-card-selected {
+	border: 1px solid $color-secondary;
+	border-radius: 3px;
+}
+
+.set-card-button-unactive {
+	position: relative;
+	border: 1px solid $color-secondary;
+	border-radius: 3px 0px;
+	right: -1px;
+	bottom: -1px;
+
+	display: grid;
+	align-items: center;
+	justify-content: center;
+
+	font-size: $default-font-size;
+	font-weight: $font-weight-title;
+	color: $color-secondary;
+}
