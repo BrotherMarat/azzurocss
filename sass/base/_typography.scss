@@ -1,24 +1,4 @@
-// Title
-.big-title {
-	font-size: 3rem;
-	font-weight: $font-weight-title;
-	color: $color-text-dark;
-}
-
-.default-title {
-	font-size: $font-size-title;
-	font-weight: $font-weight-title;
-	color: $color-text-dark;
-}
-
-// buttons
-// Detail set card
-.set-select-button {
-	font-size: $default-font-size;
-	font-weight: $font-weight-title;
-}
-
-// text
+// text font-size 1.4, font-weight regular (400)
 .text-default-light {
 	font-size: $default-font-size;
 	color: $color-text-light;
@@ -31,6 +11,45 @@
 	font-weight: $font-weight-text-400;
 }
 
+// text custom
+.big-title {
+	font-size: 3rem;
+	font-weight: $font-weight-title;
+	color: $color-text-dark;
+}
+
+.title-24 {
+	font-size: 2.4rem;
+	font-weight: $font-weight-title;
+	color: $color-text-dark;
+}
+
+.title-20 {
+	font-size: 2rem;
+	font-weight: $font-weight-title;
+	color: $color-text-dark;
+}
+
+.title-18 {
+	font-size: $font-size-title;
+	font-weight: $font-weight-title;
+	color: $color-text-dark;
+}
+
+.default-title {
+	// font-size 1.6 rem, font-weight medium 500
+	font-size: $font-size-title;
+	font-weight: $font-weight-title;
+	color: $color-text-dark;
+}
+
+// buttons
+// Detail set card
+.set-select-button {
+	font-size: $default-font-size;
+	font-weight: $font-weight-title;
+}
+
 // text that inside catalog menu
 .text-catalog-menu {
 	font-size: $font-size-title-big;
@@ -38,8 +57,25 @@
 	color: $color-text-dark;
 }
 
-// Symbol
-.symbol_rub-24-medium {
-	font-size: 2.4rem;
+// Price OLD
+.price-old-16 {
+	color: $color-text-light;
 	font-weight: $font-weight-title;
+	font-size: $font-size-title;
+
+	text-decoration-line: line-through;
+	text-decoration-style: solid;
+	text-decoration-color: $color-text-light;
+	text-decoration-thickness: 1px;
+}
+
+.price-old-14 {
+	color: $color-text-light;
+	font-weight: $font-weight-title;
+	font-size: $default-font-size;
+
+	text-decoration-line: line-through;
+	text-decoration-style: solid;
+	text-decoration-color: $color-text-light;
+	text-decoration-thickness: 1px;
 }

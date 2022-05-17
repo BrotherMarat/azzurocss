@@ -4,7 +4,7 @@
 
 	display: grid;
 	grid-template-columns: 1fr 24rem;
-	grid-template-rows: repeat(7, min-content);
+	grid-template-rows: repeat(auto-fit, min-content);
 
 	&__name {
 		grid-column: 1 / -1;
@@ -182,19 +182,6 @@
 			&-old {
 				justify-self: start;
 				margin: 0.5rem 0 0 1.5rem;
-				color: $color-text-light;
-				font-weight: $font-weight-title;
-				&-value {
-					font-size: $font-size-title;
-
-					text-decoration-line: line-through;
-					text-decoration-style: solid;
-					text-decoration-color: $color-text-light;
-					text-decoration-thickness: 1px;
-				}
-				&-symbol {
-					font-size: $default-font-size;
-				}
 			}
 
 			&-current {
@@ -207,6 +194,52 @@
 				&-symbol {
 					margin-left: 0.5rem;
 					font-size: 2.4rem;
+				}
+			}
+		}
+	}
+
+	&__description {
+		grid-column: 1 / -1;
+
+		margin: 2.4rem 1rem;
+
+		&__text {
+			margin-top: 1.5rem;
+		}
+	}
+
+	&__props {
+		grid-column: 1 / -1;
+
+		margin: 1rem 1rem 0 1rem;
+
+		&__cards {
+			margin-top: 2rem;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+			grid-gap: 2rem;
+			&__container {
+				margin-left: 1rem;
+
+				&-name {
+					font-weight: $font-weight-title;
+				}
+
+				&__list {
+					margin-top: 1rem;
+					list-style: none;
+					&__element {
+						display: flex;
+
+						justify-content: center;
+
+						&__dots {
+							border-bottom: 2px dotted rgba(0, 0, 0, 0.3);
+							flex: 1;
+							margin: 0px 4px;
+						}
+					}
 				}
 			}
 		}

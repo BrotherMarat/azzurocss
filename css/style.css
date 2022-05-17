@@ -32,8 +32,33 @@ body {
   text-decoration: none;
   color: #161616; }
 
+.text-default-light {
+  font-size: 1.4rem;
+  color: #626262;
+  font-weight: 400; }
+
+.text-default {
+  font-size: 1.4rem;
+  color: #161616;
+  font-weight: 400; }
+
 .big-title {
   font-size: 3rem;
+  font-weight: 500;
+  color: #161616; }
+
+.title-24 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #161616; }
+
+.title-20 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #161616; }
+
+.title-18 {
+  font-size: 1.6rem;
   font-weight: 500;
   color: #161616; }
 
@@ -46,24 +71,28 @@ body {
   font-size: 1.4rem;
   font-weight: 500; }
 
-.text-default-light {
-  font-size: 1.4rem;
-  color: #626262;
-  font-weight: 400; }
-
-.text-default {
-  font-size: 1.4rem;
-  color: #161616;
-  font-weight: 400; }
-
 .text-catalog-menu {
   font-size: 1.8rem;
   font-weight: 400;
   color: #161616; }
 
-.symbol_rub-24-medium {
-  font-size: 2.4rem;
-  font-weight: 500; }
+.price-old-16 {
+  color: #626262;
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  text-decoration-color: #626262;
+  text-decoration-thickness: 1px; }
+
+.price-old-14 {
+  color: #626262;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  text-decoration-color: #626262;
+  text-decoration-thickness: 1px; }
 
 .btn {
   border-radius: 5px;
@@ -354,10 +383,12 @@ body {
       margin: 1rem 0 0 1rem; }
   .detail__set__card {
     margin: 0 1rem;
-    height: 10rem;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+    height: 100%;
+    min-height: 10rem;
     display: grid;
     grid-template-columns: 10rem 1fr 9.3rem;
-    grid-template-rows: 1fr 5.6rem; }
+    grid-template-rows: 4.4rem 1fr; }
     .detail__set__card-img {
       align-self: center;
       grid-column: 1 / span 1;
@@ -367,13 +398,52 @@ body {
     .detail__set__card__price {
       grid-column: 2 / span 2;
       grid-row: 1 / span 1;
-      justify-self: end; }
+      justify-self: end;
+      display: flex; }
+      .detail__set__card__price__current {
+        margin-right: 0.5rem;
+        align-self: center; }
+      .detail__set__card__price__old {
+        margin-right: 0.5rem; }
     .detail__set__card-text {
       grid-column: 2 / span 1;
-      grid-row: 2 / span 1; }
+      grid-row: 2 / span 1;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem; }
     .detail__set__card__control {
       grid-column: 3 / span 1;
-      grid-row: 2 / span 1; }
+      grid-row: 2 / span 1;
+      display: grid;
+      font-size: 1.4rem;
+      font-weight: 500; }
+      .detail__set__card__control-name {
+        color: #e62a76;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .detail__set__card__control-remove {
+        background-color: #e62a76;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none; }
+      .detail__set__card__control__choose {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none; }
+      .detail__set__card__control__add {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none; }
 
 .set-card-selected {
   border: 1px solid #e62a76;
@@ -384,13 +454,28 @@ body {
   border: 1px solid #e62a76;
   border-radius: 3px 0px;
   right: -1px;
+  bottom: -1px; }
+
+.set-card-button-selected {
+  position: relative;
+  border: 1px solid #e62a76;
+  border-radius: 3px 0px;
+  right: -1px;
+  bottom: -1px; }
+
+.set-card-button-choose {
+  position: relative;
+  border-radius: 3px 0px;
+  right: -1px;
   bottom: -1px;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #e62a76; }
+  background-color: #774898; }
+
+.set-card-button-add {
+  position: relative;
+  border-radius: 3px 0px;
+  right: -1px;
+  bottom: -1px;
+  background-color: #e62a76; }
 
 .header {
   grid-column: 1 / -1;
@@ -710,7 +795,7 @@ body {
   margin: 2.5rem 1rem 2.4rem 1rem;
   display: grid;
   grid-template-columns: 1fr 24rem;
-  grid-template-rows: repeat(7, min-content); }
+  grid-template-rows: repeat(auto-fit, min-content); }
   .detail__name {
     grid-column: 1 / -1;
     grid-row: 1 / span 1;
@@ -820,17 +905,7 @@ body {
       justify-items: center; }
       .detail__right__info__price-old {
         justify-self: start;
-        margin: 0.5rem 0 0 1.5rem;
-        color: #626262;
-        font-weight: 500; }
-        .detail__right__info__price-old-value {
-          font-size: 1.6rem;
-          text-decoration-line: line-through;
-          text-decoration-style: solid;
-          text-decoration-color: #626262;
-          text-decoration-thickness: 1px; }
-        .detail__right__info__price-old-symbol {
-          font-size: 1.4rem; }
+        margin: 0.5rem 0 0 1.5rem; }
       .detail__right__info__price-current {
         color: #161616;
         font-weight: 500; }
@@ -839,3 +914,30 @@ body {
         .detail__right__info__price-current-symbol {
           margin-left: 0.5rem;
           font-size: 2.4rem; }
+  .detail__description {
+    grid-column: 1 / -1;
+    margin: 2.4rem 1rem; }
+    .detail__description__text {
+      margin-top: 1.5rem; }
+  .detail__props {
+    grid-column: 1 / -1;
+    margin: 1rem 1rem 0 1rem; }
+    .detail__props__cards {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+      grid-gap: 2rem; }
+      .detail__props__cards__container {
+        margin-left: 1rem; }
+        .detail__props__cards__container-name {
+          font-weight: 500; }
+        .detail__props__cards__container__list {
+          margin-top: 1rem;
+          list-style: none; }
+          .detail__props__cards__container__list__element {
+            display: flex;
+            justify-content: center; }
+            .detail__props__cards__container__list__element__dots {
+              border-bottom: 2px dotted rgba(0, 0, 0, 0.3);
+              flex: 1;
+              margin: 0px 4px; }
